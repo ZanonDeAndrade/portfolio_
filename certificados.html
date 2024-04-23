@@ -1,67 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Certificados</title>
-        <link rel="stylesheet" href="./Styles/certificados.css">
-    </head>
-    <body>
-        <header class="cabecalho">
-            <nav class="cabecalho__menu">
-                <a class="cabecalho_menu_link" href="./index.html">Home</a>
-                <a class="cabecalho_menu_link" href="./about.html">Sobre Mim</a>
-                <a class="cabecalho_menu_link" href="./certificados.html">Certificados</a>
-            </nav>
-        </header>
-                <div class="slider">
-                    <div class="slides">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="./Styles/certificados.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho_menu_link" href="./index.html">Home</a>
+            <a class="cabecalho_menu_link" href="./about.html">Sobre</a>
+            <a class="cabecalho_menu_link" href="./certificados.html">Certificados</a>
+        </nav>
+    </header>
 
-                        <!-- Radio Buttons -->
-                            <input type="radio" name="radio-btn" id="radio1">
-                            <input type="radio" name="radio-btn" id="radio2">
-                            <input type="radio" name="radio-btn" id="radio3">
-                            <input type="radio" name="radio-btn" id="radio4">
-                        <!-- Fim Rádio Buttuns -->
+    <main id="myCarousel">
+        <div class="certificados-container">
+            <img class="certificados" src="./Certificados/01.jpeg" alt="">
+            <img class="certificados" src="./Certificados/02.jpeg" alt="">
+            <img class="certificados" src="./Certificados/03.jpeg" alt="">
+            <img class="certificados" src="./Certificados/04.jpeg" alt="">
+            <img class="certificados" src="./Certificados/05.jpeg" alt="">
+            <img class="certificados" src="./Certificados/06.jpeg" alt="">
+            <img class="certificados" src="./Certificados/07.jpeg" alt="">
+            <img class="certificados" src="./Certificados/08.jpeg" alt="">
+        </div>
+        
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+        </ol>
+    </main>
 
-                        <!-- Imagens -->
-                        <div class="slide first">
-                            <img src="./Certificados/2ebdae43-26bd-4619-93b4-66a92e28383c.jpeg" alt="Img1">
-                        </div>
-                        <div class="slide">
-                            <img src="./Certificados/30eb7fbe-f2f2-49a9-a706-3c32a7eaeb47.jpeg" alt="Img2">
-                        </div>
-                        <div class="slide">
-                            <img src="./Certificados/917020cb-5b22-4a13-94af-19e270ce9ff4 (1).jpeg" alt="Img3">
-                        </div>
-                        <div class="slide">
-                            <img src="./Certificados/eaa83dac-ae05-4af7-8b76-1aaba63198eb.jpeg" alt="Img4">
-                        </div>
-                        <!-- Fim Imagens-->
+    <footer class="rodape">
+        <p>Desenvolvido por Arthur Zanon.</p>
+    </footer>
 
-                        <!-- Navigation Auto -->
-                        <div class="navigation-auto">
-                            <div class="auto-btn1"></div>
-                            <div class="auto-btn2"></div>
-                            <div class="auto-btn3"></div>
-                            <div class="auto-btn4"></div>
-                        </div>
-                        <!-- Fim Navigation -->
-                    </div>
+    <script>
+            $(document).ready(function(){
+        console.log("Slick Carousel inicializado!");
+        $('.certificados-container').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+                }
+            }
+            ]
+        });
 
+        // Add event listener for slide change
+        $('.certificados-container').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            // Remove active class from all li elements
+            $('.carousel-indicators li').removeClass('active');
 
-                    <div class="manual-navigation">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
-                        <label for="radio4" class="manual-btn"></label>
-                    </div>
-
-
-                </div>
-
-            <script src="./JS/script.js"></script>
-
-            
-    </body>
-</html> 
+            // Add active class to the li element corresponding to the current slide
+            $('.carousel-indicators li:eq(' + currentSlide + ')').addClass('active');
+        });
+        });
+      </script>
+</body>
+</html>

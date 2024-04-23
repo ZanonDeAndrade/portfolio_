@@ -117,7 +117,13 @@ body{
     width: 32%;
 }
 
-.rodape{
+
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
     padding: 15px;
@@ -131,7 +137,7 @@ body{
 @media (max-width: 800px) {
     
     .cabecalho{
-        padding: 10% 0% 0% 0%;
+        padding: 10% 10% 0% 10%;
     }
 
     .cabecalho__menu{
