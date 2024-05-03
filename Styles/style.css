@@ -175,7 +175,7 @@ body{
     }
 
     .apresentacao_imagem{
-        width: 80%;
+        width: 70%;
         margin-top: -3%;
     }
 
@@ -184,10 +184,10 @@ body{
     }
 
     .apresentacao__conteudo__titulo{
-        margin-top: 2%;
+        margin-top: -2%;
     }
 
     .img__logo_git{
-        margin-bottom: 5%;
+        margin-bottom: 15%;
     }
 }
