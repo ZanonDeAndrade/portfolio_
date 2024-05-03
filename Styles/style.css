@@ -191,4 +191,8 @@ body{
     .apresentacao_imagem_inicio{
         width: 0%;
     }
+
+    .botao{
+        margin-bottom: 5%;
+    }
 }
