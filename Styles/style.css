@@ -175,11 +175,19 @@ body{
     }
 
     .apresentacao_imagem{
-        width: 70%;
+        width: 80%;
         margin-top: -3%;
     }
 
     .apresentacao_imagem_inicio{
         width: 0%;
+    }
+
+    .apresentacao__conteudo__titulo{
+        margin-top: 2%;
+    }
+
+    .img__logo_git{
+        margin-bottom: 5%;
     }
 }
