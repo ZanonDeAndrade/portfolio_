@@ -154,6 +154,10 @@ body{
     .cabecalho__menu{
         justify-content: center;
     }
+
+    .cabecalho_menu_link{
+        margin-bottom: -5%;
+    }
     
     .apresentacao{
         flex-direction: column-reverse;
@@ -181,13 +185,5 @@ body{
 
     .apresentacao_imagem_inicio{
         width: 0%;
-    }
-
-    .apresentacao__conteudo__titulo{
-        margin-top: -2%;
-    }
-
-    .img__logo_git{
-        margin-bottom: 15%;
     }
 }
