@@ -166,6 +166,10 @@ body{
         margin-top: -30%;
     }
 
+    .apresentacao__conteudo__paragrafo{
+        margin-bottom: 10%;
+    }
+
     .apresentacao__conteudo_about{
         width: auto;
     }
