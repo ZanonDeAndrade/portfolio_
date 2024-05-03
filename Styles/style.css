@@ -70,6 +70,11 @@ body{
     font-family: var(--font-secundaria);
 }
 
+.apresentacao__conteudo__paragrafo_01{
+    font-size: 1rem;
+    font-family: var(--font-secundaria);
+}
+
 .apresentacao__conteudo__titulo{
     font-size: 2rem;
     font-family: var(--font-primaria);
@@ -170,7 +175,7 @@ body{
         margin-top: -30%;
     }
 
-    .apresentacao__conteudo__paragrafo{
+    .apresentacao__conteudo__paragrafo_01{
         margin-bottom: 10%;
     }
 
