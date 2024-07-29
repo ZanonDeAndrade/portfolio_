@@ -38,6 +38,10 @@ body {
     text-decoration: none;
 }
 
+.apresentacao__conteudo__titulo{
+    width: 100%;
+}
+
 .projetos {
     padding: 20px;
 }
