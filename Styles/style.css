@@ -220,6 +220,7 @@ body{
     .botao_dowload_curriculo {
         width: 40%;
         margin: 0 auto; /* Centraliza o botão horizontalmente */
-        display: block; /* Garante que o margin auto funcione */
+        display: inline-block;
+        text-align: center;
     }
 }
