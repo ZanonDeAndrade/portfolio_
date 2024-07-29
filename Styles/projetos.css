@@ -163,7 +163,7 @@ body {
     
 
     .logo_todo, .logo_barber {
-        width: 50%;
+        width: 20%;
         display: flex;
         justify-content: center; /* Centraliza horizontalmente */
         align-items: center;    /* Centraliza verticalmente */
