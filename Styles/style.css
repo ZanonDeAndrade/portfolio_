@@ -197,7 +197,16 @@ body{
     .apresentacao__conteudo__titulo{
         width: 100%;
         font-size: 25px;
+        text-align: center;
+        display: inline-block;
     }
+
+    .centralizar-digital {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    
 
     .apresentacao_imagem{
         width: 70%;

@@ -116,7 +116,11 @@ h1 {
     }
 
     .skills-container{
+        display: inline-block;
+        text-align: center;
         width: 100%;
+        margin-top: -8%;
+        margin-bottom: 2%;
     }
 
     .apresentacao__conteudo{
