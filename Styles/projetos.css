@@ -203,6 +203,12 @@ body {
         width: 100%;
     }
 
+    .deploy-git-container{
+        width: 50%;
+        margin: auto;
+        margin-bottom: 25%;
+    }
+
     .botao_dowload_curriculo {
         width: 40%;
         margin: 0 auto; /* Centraliza o botão horizontalmente */
