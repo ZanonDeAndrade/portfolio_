@@ -25,6 +25,12 @@ body {
     padding: 1.5% 0% 0% 8%;
 }
 
+.linha-separadora {
+    border-top: 3px solid var(--cor-terciaria); /* Altere a cor e o estilo conforme necessário */
+    margin: 20px 0; /* Ajuste a margem conforme necessário */
+    margin-bottom: 20%;
+}
+
 .cabecalho__menu {
     display: flex;
     gap: 80px;
@@ -207,8 +213,30 @@ body {
         margin-bottom: 25%;
     }
 
-    .git{
+    .deploy, .git {
         width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+        border: 2px solid var(--cor-terciaria);
+        border-radius: 5px;
+    }
+
+    .deploy img, .git img {
+        display: none; /* Esconde as imagens em dispositivos móveis */
+    }
+
+    .deploy a, .git a {
+        font-size: 1rem; /* Ajuste o tamanho do texto se necessário */
+        color: var(--cor-secondaria);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .deploy:hover, .git:hover {
+        background-color: #272727;
     }
 
     .botao_dowload_curriculo {
@@ -217,4 +245,3 @@ body {
         display: block; /* Garante que o margin auto funcione */
     }
 }
-
