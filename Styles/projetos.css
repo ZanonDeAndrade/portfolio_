@@ -214,12 +214,3 @@ body {
     }
 }
 
-@media (max-width: 600px) {
-    .deploy a, .git a {
-        display: none; /* Esconde o texto no celular */
-    }
-
-    .deploy img, .git img {
-        margin-right: 0; /* Remove a margem à direita */
-    }
-}
