@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfólio</title>
-        <link rel="stylesheet" href="./Styles/style.css">
-    </head>
-    <body>
-        <header class="cabecalho">
-            <nav class="cabecalho__menu">
-                <a class="cabecalho_menu_link" href="./index.html">Home</a>
-                <a class="cabecalho_menu_link" href="./about.html">Sobre </a>
-                <a class="cabecalho_menu_link" href="./projetos.html">Projetos</a>
-                <a class="cabecalho_menu_link" href="./skills.html">Skills</a>
-            </nav>
-        </header>
-        <main class="apresentacao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="./Styles/projetos.css">
+    <link rel="stylesheet" href="./Styles/skills.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho_menu_link" href="#home">Home</a>
+            <a class="cabecalho_menu_link" href="#about">Sobre </a>
+            <a class="cabecalho_menu_link" href="#projetos">Projetos</a>
+            <a class="cabecalho_menu_link" href="#skills">Skills</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="apresentacao">
             <section class="apresentacao__conteudo">
                 <h1 class="apresentacao__conteudo__titulo">Eleve seu negocio <span class="centralizar-digital">digital!</span></h1>
                 <div class="botao">
@@ -35,9 +38,151 @@
                 </div>
             </section>
             <img class="apresentacao_imagem_inicio" src="./Assets/assets/eu.png" alt="">
-        </main>
-        <footer class="rodape">
-            <p>Desenvolvido por Arthur Zanon.</p>
-        </footer>
-    </body>
+        </section>
+
+        <section id="about" class="apresentacao">
+            <section class="apresentacao__conteudo_about">
+                <h1 class="apresentacao__conteudo__titulo"> Sobre mim</h1>
+                <p class="apresentacao__conteudo__paragrafo">Olá! Sou Arthur Zanon de Andrade, um entusiasta 
+                    apaixonado por tecnologia desde sempre. Atualmente, estou embarcando 
+                    na empolgante jornada do 4º semestre do curso de Sistemas de Informação 
+                    na Antonio Meneghetti Faculdade, onde busco aprimorar meu conhecimento e 
+                    habilidades em diversas áreas da computação.</p>
+                <p class="apresentacao__conteudo__paragrafo">Minha verdadeira paixão reside na 
+                    criação de experiências digitais envolventes e intuitivas. Estou 
+                    constantemente explorando e aprendendo sobre o vasto mundo da programação 
+                    fullstack, onde posso dar vida às minhas ideias e contribuir para a construção
+                     de interfaces elegantes e funcionais que cativam os usuários.</p>
+
+                <p class="apresentacao__conteudo__paragrafo_01"> Vamos criar algo incrível juntos?! </p>
+
+                <a href="./Assets/assets/Moderno (2)-1.pdf" download="Curriculo_Arthur_Zanon.pdf" class="botao_dowload_curriculo">Baixar Curriculo</a>
+            </section>
+            <img class="apresentacao_imagem" src="./Assets/assets/eu.png" alt="">
+        </section>
+
+        <section id="projetos" class="projetos">
+            <div class="barbearia">
+                <img class="imagem" src="./Assets/assets/barbearia.png" alt="">
+                <div class="tecnologias">
+                    <p class="tecnologias_titulo">Tecnologias Usadas</p>    
+                    <div class="logo_barber">
+                        <img class="html" src="./Assets/assets/html.png" alt="">
+                        <img class="css" src="./Assets/assets/css.png" alt="">
+                        <img class="type" src="./Assets/assets/type.webp" alt="">
+                        <img class="react2" src="./Assets/assets/react.png" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <p>Neste projeto freelance, desenvolvi<br> um sistema
+                    para uma barbearia que <br> visa facilitar 
+                    o agendamento de cortes <br> de cabelo de 
+                    seus clientes. Criado para <br> atender às
+                    necessidades específicas <br> do negócio, o 
+                    sistema oferece uma <br> experiência intuitiva
+                    e personalizada. <br> Os recursos incluem: <br>
+                    <div class="recursos">
+                        Escolha do Barbeiro, 
+                        Escolha do Tipo de Corte, 
+                        Agendamento de Data e Horário</p></div>
+                </div>
+                <div class="deploy-git-container">
+                    <div class="deploy">
+                        <img src="./Assets/assets/deploy.png" alt="">
+                        <a href="https://barbearia-resenha.vercel.app/" target="_blank">Deploy</a>
+                    </div>
+                    <div class="git">
+                        <img src="./Assets/assets/github.png" alt="">
+                        <a href="https://github.com/ZanonDeAndrade/Projeto_Barbearia.git" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="linha-separadora"></div>
+            <div class="todo">
+                <img src="./Assets/assets/todo.jpeg" alt="">
+                <div class="tecnologias">
+                    <p class="tecnologias_titulo">Tecnologias Usadas</p>
+                    <div class="logo_todo">
+                        <img class="html" src="./Assets/assets/html.png" alt="">
+                        <img class="css" src="./Assets/assets/css.png" alt="">
+                        <img class="react" src="./Assets/assets/react.png" alt="">
+                        <img class="vite" src="./Assets/assets/vite.png" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <p>Este projeto é uma lista de tarefas criada <br>
+                        como parte de um desafio prático durante<br>
+                        um processo seletivo para desenvolvedor<br> 
+                        Front-End. A lista de tarefas possui diversas <br>
+                        funcionalidades que a tornam bastante <br>
+                        dinâmica e útil para gerenciamento de  <br>
+                        atividades. <br> Os recursos incluem: <br>
+                    <div class="recursos">Adicionar Tarefas, Excluir Tarefas,<br>
+                        Marcar como Concluída e Alterar Tarefa</div>
+                    </p>
+                </div>
+                <div class="deploy-git-container">
+                    <div class="deploy">
+                        <img src="./Assets/assets/deploy.png" alt="">
+                        <a href="https://projeto-imago.vercel.app/" target="_blank">Deploy</a>
+                    </div>
+                    <div class="git">
+                        <img src="./Assets/assets/github.png" alt="">
+                        <a href="https://github.com/ZanonDeAndrade/Projeto_Imago.git" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-container">
+            <h1>Minhas Habilidades Técnicas</h1>
+            <div class="skills-row">
+                <div class="skill">
+                    <div class="skill-logo">
+                        <img src="./Assets/assets/type.webp" alt="TypeScript">
+                        <p class="skill-name">TypeScript</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-logo">
+                        <img src="./Assets/assets/react.png" alt="React">
+                        <p class="skill-name">React</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-logo">
+                        <img src="./Assets/assets/Next.png" alt="Next.js">
+                        <p class="skill-name">Next.js</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-logo">
+                        <img src="./Assets/assets/figma (1).png" alt="Figma">
+                        <p class="skill-name">Figma</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-logo">
+                        <img src="./Assets/assets/postgresql1.png" alt="PostgreSQL">
+                        <p class="skill-name">PostgreSQL</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-logo">
+                        <img src="./Assets/assets/django (1).png" alt="Django">
+                        <p class="skill-name">Django</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Arthur Zanon.</p>
+    </footer>
+</body>
 </html>

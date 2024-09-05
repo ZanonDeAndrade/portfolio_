@@ -91,6 +91,87 @@ h1 {
 }
 
 
+.skills-container {
+    text-align: center;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: space-around; /* Para distribuir igualmente */
+    flex-wrap: wrap; /* Para permitir quebra de linha em telas menores */
+    margin-top: 20px;
+}
+
+.skill {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.skill-logo img {
+    max-width: 100px; /* Define um tamanho para os ícones */
+    height: auto;
+}
+
+.skill-info {
+    margin-top: 10px;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #3498db;
+    margin: 5px 0;
+}
+
+
+
+.skills-container {
+    text-align: center;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill {
+    position: relative;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+.skill-logo img {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.skill-logo:hover img {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.skill-name {
+    display: none;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.skill-logo:hover .skill-name {
+    display: block;
+}
+
+
 @media (max-width: 800px) {
     .cabecalho {
         padding: 10% 5% 5% 5%; /* Ajuste o padding conforme necessário */

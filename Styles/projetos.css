@@ -50,10 +50,26 @@ body {
 
 .projetos {
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adicione espaço entre os projetos */
 }
 
-.todo, .barbearia {
-    margin-bottom: 40px;
+.projetos__item {
+    background-color: var(--cor-secondaria);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Define a largura dos projetos */
+    max-width: 400px; /* Define uma largura máxima para os projetos */
+    text-align: center; /* Centraliza o texto dentro do projeto */
+}
+
+.imagem{
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
 }
 
 .tecnologias {
