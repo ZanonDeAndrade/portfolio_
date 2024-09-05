@@ -86,7 +86,7 @@ body{
     color: var(--cor-terciaria);
     border: 2px solid #22D4FD;
     padding: 2%;
-    width: 24%;
+    width: 28%;
     border-radius: 50px;
     text-decoration: none;
 }
@@ -163,6 +163,15 @@ body{
 
 
 @media (max-width: 800px) {
+
+    .projetos{
+        margin-top: 5%;
+    }
+
+    .barbearia{
+        margin-bottom: -35%;
+    }
+    
     .cabecalho {
         padding: 10% 5% 5% 5%; /* Ajuste o padding conforme necessário */
     }
@@ -187,10 +196,6 @@ body{
     .apresentacao__conteudo{
         width: auto;
         margin-top: -30%;
-    }
-
-    .apresentacao__conteudo__paragrafo_01{
-        margin-bottom: 10%;
     }
 
     .apresentacao__conteudo_about{
@@ -221,8 +226,7 @@ body{
     }
 
     .botao_dowload_curriculo {
-        width: 40%;
-        margin: 0 auto; /* Centraliza o botão horizontalmente */
+        width: 100%;
         display: inline-block;
         text-align: center;
     }
