@@ -231,4 +231,18 @@ h1 {
         margin: 0 auto; /* Centraliza o botão horizontalmente */
         display: block; /* Garante que o margin auto funcione */
     }
+
+
+    .skills-row {
+        justify-content: space-between; /* Distribui igualmente */
+    }
+
+    .skill {
+        width: 30%; /* Ocupa um terço da largura */
+        margin: 15px 0px; /* Espaçamento entre os itens */
+    }
+
+    .skill-logo {
+        margin-left: 28%;
+    }
 }
