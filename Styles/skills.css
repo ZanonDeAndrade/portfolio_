@@ -40,7 +40,7 @@ body {
 }
 
 h1 {
-    color: var(--cor-terciaria);
+    color: var(--cor-secondaria);
     font-family: var(--font-primaria);
     font-size: 2rem;
     margin-bottom: 30px;
